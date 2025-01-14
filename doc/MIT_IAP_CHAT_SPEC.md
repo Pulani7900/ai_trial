@@ -1,4 +1,4 @@
-# BookChat Application Specification
+# MIT_IAP_Chat Application Specification
 
 ## Quick Start Guide
 
@@ -11,7 +11,7 @@
 For detailed implementation steps, see the [Core Components](#core-components) section.
 
 ## Overview
-BookChat is a secure, signature-verified chat application that uses Git for message storage and RSA signatures for message verification. Users can send messages and change usernames with cryptographic verification. The application optionally supports GitHub synchronization for message persistence.
+MIT_IAP_Chat is a secure, signature-verified chat application that uses Git for message storage and RSA signatures for message verification. Users can send messages and change usernames with cryptographic verification. The application optionally supports GitHub synchronization for message persistence.
 
 ## Core Components
 
@@ -154,7 +154,7 @@ The application uses a hierarchical logging system:
 - `logs/error.log`: ERROR and above
 
 #### Configuration
-- Console logging level controlled by `BOOKCHAT_DEBUG` environment variable
+- Console logging level controlled by `MIT_IAP_CHAT_DEBUG` environment variable
 - Log format includes timestamp, level, filename, and line number
 
 ### 9. Message Archiving
@@ -235,7 +235,7 @@ class ChatRequestHandler(SimpleHTTPRequestHandler):
 
 ## File Structure
 ```
-bookchat/
+mit_iap_chat/
 ├── server.py              # HTTP server
 ├── git_manager.py         # Git and message management
 ├── templates/
